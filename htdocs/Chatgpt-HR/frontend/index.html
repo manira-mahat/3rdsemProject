@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Human Resource Management System</h1>
+    <div id="employee-form">
+        <h2>Add Employee</h2>
+        <form id="add-employee-form">
+            <input type="text" id="name" placeholder="Employee Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone">
+            <select id="department">
+                <option value="">Select Department</option>
+                <!-- Options will be populated using JavaScript -->
+            </select>
+            <input type="text" id="role" placeholder="Role">
+            <button type="submit">Add Employee</button>
+        </form>
+    </div>
+
+    <div id="employee-list">
+        <h2>Employee List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Department</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="employee-data">
+                <!-- Data will be populated here using JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

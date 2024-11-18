@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+   
+
+    <title>Shop Page </title>
+</head>
+
+<body>
+
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">αγορά</a>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="home.html" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a class="active" href="shop.html" class="nav__link">Shop</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+
+                
+            </div>
+        </nav>
+    </header>
+   
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-img">
+            <img src="f1.jpg" width="100%" id="MainImg" alt="">
+            
+            <div class="small-img-wrapper">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="f1.jpg" width="100%" class="small-img" alt="" onclick="Change('f1.jpg')">
+                    </div>
+                    <div class="small-img-col" >
+                        <img src="f2.jpg" width="100%" class="small-img" alt=""onclick="Change('f2.jpg')">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="f3.jpg" width="100%" class="small-img" alt=""onclick="Change('f3.jpg')">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="f4.jpg" width="100%" class="small-img" alt=""onclick="Change('f4.jpg')">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home / T-Shirt</h6>
+            <h4>Men's Fashion T Srirt</h4>
+            <h2>$184.00</h2>
+            <select >
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>Experience ultimate comfort and style with our premium cotton T-shirt. Featuring a modern fit and crafted from soft, breathable fabric, this versatile tee is perfect for everyday wear. Its durable stitching ensures longevity, while the minimalist design makes it easy to pair with any outfit. Elevate your wardrobe with this essential piece today.</span>
+        </div>
+    </section>
+     
+    <section id="product1" class="section-p1">
+        <h1> Featured Products</h1>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="n1.jpg" alt="">
+                <div class="des">
+                    <span>Tommy Hilfiger</span>
+                    <h5>Linen Blend Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> $59</h4>
+                </div>
+                <button class="shopNow"> Shop Now
+                </button>           
+             </div>
+            <div class="pro">
+                <img src="n2.jpg" alt="">
+                <div class="des">
+                    <span>J.Crew</span>
+                <h5>Performance Twill Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> $40</h4>
+                </div>
+                <button class="shopNow"> Shop Now
+                </button>
+            </div>
+            <div class="pro">
+                <img src="n3.jpg" alt="">
+                <div class="des">
+                    <span>Charles Tyrwhitt</span>
+                <h5>Regular Fit Non-Iron Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> $81</h4>
+                </div>
+                <button class="shopNow"> Shop Now
+                </button>
+            </div>
+            <div class="pro">
+                <img src="n4.jpg" alt="">
+                <div class="des">
+                    <span> L.L. Bean</span>
+                <h5>Heritage Cotton Flannel Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> $29</h4>
+                </div>
+                <button class="shopNow"> Shop Now
+                </button>
+            </div>
+            
+        </div>
+    </section>
+
+<section id="banner1" class="section-m1">
+</section>
+<script>
+    function Change(path){
+        document.getElementById("MainImg").src=path;
+      
+      
+    }
+</script>
+<Script src="script.js"></Script>
+
+    </body>
+    </html>
